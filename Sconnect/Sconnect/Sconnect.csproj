@@ -81,6 +81,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -200,6 +201,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Browser\Documentos\documento.aspx" />
     <Content Include="Browser\Register\registro.aspx" />
+    <Content Include="imagenes\invitado.jpg" />
     <Content Include="Scripts\DatePicker.js" />
     <Content Include="Scripts\jquery-ui.css" />
     <Content Include="Scripts\jquery-ui.js" />
@@ -443,8 +445,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Browser\Register\source\" />
     <Folder Include="source\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sconnect.Extended\Sconnect.Extended.csproj">
+      <Project>{77cf581b-3cd2-4780-9600-bef6f4d6db7c}</Project>
+      <Name>Sconnect.Extended</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

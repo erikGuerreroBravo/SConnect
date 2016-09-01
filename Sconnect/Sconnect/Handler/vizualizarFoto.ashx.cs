@@ -44,8 +44,8 @@ namespace Sconnect.Handler
                 //IRepositorioSegUsuario isegUsuario = new RepositorySegUsuario();
                 //SegUsuario segUsuario = isegUsuario.GetUsaurioById(_idUsuario);
                 System.Data.Linq.Binary fotoData = null;
-                fotoData = (Binary)segUsuario.foto;
-                byte[] arreglo = fotoData.ToArray();
+                //fotoData = (Binary)segUsuario.foto;
+               byte[] arreglo = fotoData.ToArray();
                 return new MemoryStream(arreglo);
             }
             catch (Exception)

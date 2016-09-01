@@ -8,6 +8,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 
+using Sconnect.Extended.Session;
+
 namespace Sconnect
 {
     public partial class SiteMaster : MasterPage
@@ -15,6 +17,10 @@ namespace Sconnect
         private const string AntiXsrfTokenKey = "__AntiXsrfToken";
         private const string AntiXsrfUserNameKey = "__AntiXsrfUserName";
         private string _antiXsrfTokenValue;
+
+        #region  Declaracion de atributos del masterpage
+        private CtrlSession ctrlSesion;
+        #endregion
 
         protected void Page_Init(object sender, EventArgs e)
         {
@@ -69,13 +75,38 @@ namespace Sconnect
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(!IsPostBack)
+            {
+                //   ctrlSesion.ValidaSession(this.Page);
+                this.setVisibleDatosPerfil(null);
+            }
         }
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
         }
+
+
+        #region  Establecer la foto de un usuario dentro del sistema
+        protected void setVisibleDatosPerfil(string segusuario)///SegUsuario segusuario
+        {
+            if ( string.IsNullOrEmpty(segusuario)) //segusuario == null
+            {
+                this.ImgUser.ImageUrl = "~/imagenes/invitado.jpg";
+
+            }
+            else
+            {
+                //this.ImgPerfilUsuario.ImageUrl = "/Handler/vizualizarFoto.ashx?id=" + segusuario.id;
+                //this.setVisibleDatosPersonaPerfil(segusuario);
+            }
+        }
+        #endregion
+
+
+
+
     }
 
 }

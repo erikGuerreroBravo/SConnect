@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
+using System.Collections;
 
 namespace Sconnect.Extended.Control
 {
-  public class DataGridExtender
+  public static class DataGridExtender
     {
-        public static void(this GridView _contral, IList _lista)
+        public static void getTable(this GridView _control,IList lista)
         {
-            _control.DataSource = _lista;
+            _control.DataSource = lista;
             _control.DataBind();
             _control.EmptyDataText = "No Existen Registros de Esta Consulta";
         }

@@ -226,7 +226,8 @@
             <div id="navigation">
                 <div class="profile-picture">
                     <a href="index.html">
-                        <img src="/source/images/profile.jpg" class="img-circle m-b" alt="logo">
+                        <asp:Image ID="ImgUser" runat="server" CssClass="img-circle m-b" alt="logo" Width="76px" Height="76px" />
+                        <%--<img src="/source/images/profile.jpg" class="img-circle m-b" alt="logo">--%>
                     </a>
 
                     <div class="stats-label text-color">
