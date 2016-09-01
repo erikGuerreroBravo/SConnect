@@ -6,30 +6,13 @@
 <head runat="server">
     <title></title>
     <script src="../../Scripts/jquery-1.10.2.js"></script>
-    <script src="Register.js"></script>
-    <link href="Stiles.css" rel="stylesheet" />
+    <script src="source/Register.js"></script>
+    <link href="source/Stiles.css" rel="stylesheet" />
     <script src="../../Scripts/bootstrap.js"></script>
     <link rel="stylesheet" href="~/source/vendor/bootstrap/dist/css/bootstrap.css" />
-    <link href="jquery-ui.css" rel="stylesheet" />
-    <script src="jquery-ui.js"></script>
-
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#CalendarNacimiento').datepicker({
-                
-                bottonText: 'Calendar',
-                numbreOfMonths: 2,
-                changeMonth: true,
-                changeYear: true,
-                mindDate: new Date(1990, 1, 1),
-                maxDate: new Date(2000, 11, 31)
-               
-
-         });
-        });
-    </script>
-
+    <script src="source/jquery-ui.js"></script>
+    <link href="source/jquery-ui.css" rel="stylesheet" />
+    <script src="source/DatePicker.js"></script>
 </head>
 <body>
     <form id="form1" runat="server" class="form-horizontal">
@@ -146,12 +129,12 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtContrasenia" class="form-control input-lg" placeholder="Contraseña" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtContrasenia" TextMode="Password" class="form-control input-lg" placeholder="Contraseña" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtContraseniaValidacion" class="form-control input-lg" placeholder="Confirmar contraseña" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtContraseniaValidacion" TextMode="Password"  class="form-control input-lg" placeholder="Confirmar contraseña" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -159,10 +142,12 @@
                         <hr class="colorgraph">
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
-                                <input type="submit" value="Cadastrar" class="btn btn-primary btn-block btn-lg" tabindex="7">
+                                <asp:Button ID="btnRegistrar"  class="btn btn-primary btn-block btn-lg" value="Registrar"  runat="server" Text="Button" />
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                            <asp:Button ID="btnLogear"  class="btn btn-success btn-block btn-lg" value="Entrar"  runat="server" Text="Button" />
 
                             </div>
-                            <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Logar</a></div>
                         </div>
 
                     </div>

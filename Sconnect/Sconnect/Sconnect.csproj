@@ -199,11 +199,12 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Browser\Documentos\documento.aspx" />
-    <Content Include="Browser\Register\jquery-ui.css" />
-    <Content Include="Browser\Register\jquery-ui.js" />
-    <Content Include="Browser\Register\Register.js" />
     <Content Include="Browser\Register\registro.aspx" />
-    <Content Include="Browser\Register\Stiles.css" />
+    <Content Include="Browser\Register\source\DatePicker.js" />
+    <Content Include="Browser\Register\source\jquery-ui.css" />
+    <Content Include="Browser\Register\source\jquery-ui.js" />
+    <Content Include="Browser\Register\source\Register.js" />
+    <Content Include="Browser\Register\source\Stiles.css" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
