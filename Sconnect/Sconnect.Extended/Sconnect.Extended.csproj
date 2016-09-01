@@ -51,10 +51,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Recursos.resx</DependentUpon>
     </Compile>
+    <Compile Include="Session\CtrlSession.cs" />
+    <Compile Include="Session\SessionManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Const\" />
-    <Folder Include="Session\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Recursos.resx">

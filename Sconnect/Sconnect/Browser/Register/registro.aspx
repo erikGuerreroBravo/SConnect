@@ -6,17 +6,16 @@
 <head runat="server">
     <title></title>
     <script src="../../Scripts/jquery-1.10.2.js"></script>
-    <script src="source/Register.js"></script>
-    <link href="source/Stiles.css" rel="stylesheet" />
+    <script src="../../Scripts/Registro.js"></script>
+    <link href="../../Content/Registro.css" rel="stylesheet" />
     <script src="../../Scripts/bootstrap.js"></script>
     <link rel="stylesheet" href="~/source/vendor/bootstrap/dist/css/bootstrap.css" />
-    <script src="source/jquery-ui.js"></script>
-    <link href="source/jquery-ui.css" rel="stylesheet" />
-    <script src="source/DatePicker.js"></script>
+    <script src="../../Scripts/DatePicker.js"></script>
+    <link href="../../Scripts/jquery-ui.css" rel="stylesheet" />
+    <script src="../../Scripts/jquery-ui.js"></script>
 </head>
 <body>
     <form id="form1" runat="server" class="form-horizontal">
-        <div>
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
                     <%--Se dejo como referencia inputs, se mejorara el diseño , se cambiaran los controles--%>
@@ -142,10 +141,10 @@
                         <hr class="colorgraph">
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
-                                <asp:Button ID="btnRegistrar"  class="btn btn-primary btn-block btn-lg" value="Registrar"  runat="server" Text="Button" />
+                                <asp:Button ID="btnRegistrar"  class="btn btn-primary btn-block btn-lg"   runat="server" Text="Registrar" />
                             </div>
                             <div class="col-xs-12 col-md-6">
-                            <asp:Button ID="btnLogear"  class="btn btn-success btn-block btn-lg" value="Entrar"  runat="server" Text="Button" />
+                            <asp:Button ID="btnLogear"  class="btn btn-success btn-block btn-lg"  runat="server" Text="Entrar" />
 
                             </div>
                         </div>

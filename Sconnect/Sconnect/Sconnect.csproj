@@ -200,11 +200,11 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Browser\Documentos\documento.aspx" />
     <Content Include="Browser\Register\registro.aspx" />
-    <Content Include="Browser\Register\source\DatePicker.js" />
-    <Content Include="Browser\Register\source\jquery-ui.css" />
-    <Content Include="Browser\Register\source\jquery-ui.js" />
-    <Content Include="Browser\Register\source\Register.js" />
-    <Content Include="Browser\Register\source\Stiles.css" />
+    <Content Include="Scripts\DatePicker.js" />
+    <Content Include="Scripts\jquery-ui.css" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\Registro.js" />
+    <Content Include="Content\Registro.css" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -439,6 +439,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Browser\Register\source\" />
     <Folder Include="source\" />
   </ItemGroup>
   <PropertyGroup>
