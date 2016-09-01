@@ -199,6 +199,8 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Browser\Documentos\documento.aspx" />
+    <Content Include="Browser\Register\jquery-ui.css" />
+    <Content Include="Browser\Register\jquery-ui.js" />
     <Content Include="Browser\Register\Register.js" />
     <Content Include="Browser\Register\registro.aspx" />
     <Content Include="Browser\Register\Stiles.css" />
